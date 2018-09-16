@@ -1,6 +1,4 @@
-﻿namespace DesignPatterns.AbstractFactory.ProductFamily1
-{
-   internal class ProductA : IProductA
-   {
-   }
+﻿namespace DesignPatterns.AbstractFactory.ProductFamily1 {
+  internal class ProductA : IProductA {
+  }
 }

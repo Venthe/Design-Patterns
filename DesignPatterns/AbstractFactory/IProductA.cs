@@ -1,6 +1,4 @@
-﻿namespace DesignPatterns.AbstractFactory
-{
-   public interface IProductA
-   {
-   }
+﻿namespace DesignPatterns.AbstractFactory {
+  public interface IProductA {
+  }
 }

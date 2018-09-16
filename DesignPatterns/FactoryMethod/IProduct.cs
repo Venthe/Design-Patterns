@@ -1,6 +1,4 @@
-﻿namespace DesignPatterns.FactoryMethod
-{
-   public interface IProduct
-   {
-   }
+﻿namespace DesignPatterns.FactoryMethod {
+  public interface IProduct {
+  }
 }

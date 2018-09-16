@@ -1,6 +1,4 @@
-﻿namespace DesignPatterns.FactoryMethod.Factory
-{
-   internal class Product : IProduct
-   {
-   }
+﻿namespace DesignPatterns.FactoryMethod.Factory {
+  internal class Product : IProduct {
+  }
 }
