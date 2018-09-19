@@ -1,4 +1,6 @@
 ﻿using System;
+using DesignPatterns.Adapter;
+using DesignPatterns.Adapter.Target;
 using DesignPatterns.Decorator;
 using DesignPatterns.Decorator.Beverages;
 using DesignPatterns.Decorator.Decorators;
@@ -9,11 +11,16 @@ using static DesignPatterns.Observer.WithSubscriber.SampleTransformations;
 namespace DesignPatterns {
   public static class Program {
     public static void Main() {
-      Console.WriteLine("Hello World!");
       ObserverPattern();
       DecoratorPattern();
       StrategyPattern();
+      AdapterPattern();
       FinishApp();
+    }
+
+    private static void AdapterPattern() {
+      var adapter = new TargetAdapter(new Target());
+      adapter.Publish2();
     }
 
     private static void StrategyPattern() {
