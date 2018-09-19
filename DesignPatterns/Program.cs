@@ -2,6 +2,7 @@
 using DesignPatterns.Decorator;
 using DesignPatterns.Decorator.Beverages;
 using DesignPatterns.Decorator.Decorators;
+using DesignPatterns.Strategy;
 using static DesignPatterns.Observer.WithSubscriber.ObservableFactory;
 using static DesignPatterns.Observer.WithSubscriber.SampleTransformations;
 
@@ -11,7 +12,16 @@ namespace DesignPatterns {
       Console.WriteLine("Hello World!");
       ObserverPattern();
       DecoratorPattern();
+      StrategyPattern();
       FinishApp();
+    }
+
+    private static void StrategyPattern() {
+      var duck1 = Duck.NormalDuckFactory();
+      var duck2 = Duck.RubberDuckFactory();
+
+      duck1.Fly();
+      duck2.Fly();
     }
 
     private static void DecoratorPattern() {
