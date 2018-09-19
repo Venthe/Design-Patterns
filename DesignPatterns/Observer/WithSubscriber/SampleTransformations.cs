@@ -1,6 +1,7 @@
 ﻿using System;
 
 namespace DesignPatterns.Observer.WithSubscriber {
+  // TODO: Make it type safe?
   public static class SampleTransformations {
     public static dynamic ToUpper(dynamic value) => value.ToString().ToUpper();
     public static Func<dynamic, dynamic> Log() => VoidFunctionToNull(Console.WriteLine);

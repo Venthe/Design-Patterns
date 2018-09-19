@@ -15,6 +15,8 @@ namespace DesignPatterns.Observer.WithSubscriber {
       }
     }
 
+    // TODO: Pass Frame and not data alone
+    // {type: completed|error|value, frame: frameNo, data: actualData}
     public IObserver<T> Pipe(params Func<dynamic, dynamic>[] transformations) {
       this.transformations = transformations;
       return this;
