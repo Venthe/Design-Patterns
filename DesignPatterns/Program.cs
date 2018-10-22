@@ -1,6 +1,7 @@
 ﻿using System;
 using DesignPatterns.Adapter;
 using DesignPatterns.Adapter.Target;
+using DesignPatterns.Command;
 using DesignPatterns.Decorator;
 using DesignPatterns.Decorator.Beverages;
 using DesignPatterns.Decorator.Decorators;
@@ -15,7 +16,26 @@ namespace DesignPatterns {
       DecoratorPattern();
       StrategyPattern();
       AdapterPattern();
+      CommandPattern();
       FinishApp();
+    }
+
+    private static void CommandPattern() {
+      var invoker = new Invoker();
+      invoker.commands.Add(new LightOffCommand());
+      invoker.commands.Add(new LightOffCommand());
+      invoker.commands.Add(new LightOffCommand());
+      invoker.commands.Add(new LightOnCommand());
+
+      invoker.DoAll();
+      invoker.UndoAll();
+
+      var remote = new Remote();
+      remote.RemoteKey1 = new LightOffCommand();
+      remote.RemoteKey2 = new LightOnCommand();
+
+      remote.RemoteKey1.Do();
+      remote.RemoteKey2.Undo();
     }
 
     private static void AdapterPattern() {
