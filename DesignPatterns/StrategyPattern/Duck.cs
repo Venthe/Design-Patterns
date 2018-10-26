@@ -1,4 +1,5 @@
-﻿using DesignPatterns.StrategyPattern.FlyStrategy;
+﻿using System;
+using DesignPatterns.StrategyPattern.FlyStrategy;
 
 namespace DesignPatterns.StrategyPattern {
   public class Duck : IDuck {
@@ -8,6 +9,8 @@ namespace DesignPatterns.StrategyPattern {
       this.flyStrategy = flyStrategy;
     }
 
-    public void Fly() => flyStrategy.Fly();
+    public void Fly() {
+      Console.Out.WriteLine($"Duck with \"{flyStrategy.Fly()}\" flying strategy");
+    }
   }
 }
