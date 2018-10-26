@@ -7,7 +7,8 @@ namespace DesignPatterns.DecoratorPattern {
     public void ShowSample() {
       AbstractBeverage tea = new Tea();
       AbstractBeverage teaWithChocolate = new ChocolateBeverageAddonDecorator(new Tea());
-      Console.Out.WriteLine($"Tea: {tea}, tea with chocolate {teaWithChocolate}");
+      Console.Out.WriteLine($"{nameof(AbstractBeverage)} Tea price: {tea}");
+      Console.Out.WriteLine($"{nameof(AbstractBeverage)} tea with chocolate addon price: {teaWithChocolate}");
     }
   }
 }
