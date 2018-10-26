@@ -10,9 +10,9 @@ namespace DesignPatterns {
       this.paddingCharacter = paddingCharacter;
     }
 
-    public void InvokeInConsoleBlock(Action callback) {
-      Console.WriteLine(callback.Method.ToString().PadRight(maxLineLength, paddingCharacter));
-      callback.Invoke();
+    public void InvokeInConsoleBlock(IDesignPatternSample sample) {
+      Console.WriteLine(sample.GetType().Name.PadRight(maxLineLength, paddingCharacter));
+      sample.ShowSample();
       Console.WriteLine(string.Empty.PadRight(maxLineLength, paddingCharacter));
       Console.WriteLine();
     }
