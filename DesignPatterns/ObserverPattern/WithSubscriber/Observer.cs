@@ -7,6 +7,7 @@ namespace DesignPatterns.ObserverPattern.WithSubscriber {
     private Func<dynamic, dynamic>[] transformations;
 
     public void Register(IObservable<T> observable) => this.observable = observable;
+
     public void Unsubscribe() => observable.Unsubscribe(this);
 
     public void Update(T data) {
