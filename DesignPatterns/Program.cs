@@ -16,32 +16,26 @@ using DesignPatterns.StrategyPattern.FlyStrategy;
 
 namespace DesignPatterns {
   public static class Program {
+    private static ConsoleUtilities consoleUtilities;
+
     public static void Main() {
+      consoleUtilities = new ConsoleUtilities();
+
       // Order kept as in Christopher Okhravi series
-      InvokeAsBlock(StrategyPattern);
-      InvokeAsBlock(ObserverPattern);
-      InvokeAsBlock(DecoratorPattern);
-      InvokeAsBlock(FactoryMethodPattern);
-      InvokeAsBlock(AbstractFactoryPattern);
-      InvokeAsBlock(SingletonPattern);
-      InvokeAsBlock(CommandPattern);
-      InvokeAsBlock(AdapterPattern);
-      InvokeAsBlock(FacadePattern);
+      consoleUtilities.InvokeInConsoleBlock(StrategyPatternSample);
+      consoleUtilities.InvokeInConsoleBlock(ObserverPatternSample);
+      consoleUtilities.InvokeInConsoleBlock(DecoratorPatternSample);
+      consoleUtilities.InvokeInConsoleBlock(FactoryMethodPatternSample);
+      consoleUtilities.InvokeInConsoleBlock(AbstractFactoryPatternSample);
+      consoleUtilities.InvokeInConsoleBlock(SingletonPatternSample);
+      consoleUtilities.InvokeInConsoleBlock(CommandPatternSample);
+      consoleUtilities.InvokeInConsoleBlock(AdapterPatternSample);
+      consoleUtilities.InvokeInConsoleBlock(FacadePatternSample);
 
-      FinishApp();
+      consoleUtilities.PauseApp();
     }
 
-    private static void InvokeAsBlock(Action callback) {
-      const int padCount = 78;
-      const char padChar = '-';
-      
-      Console.WriteLine(callback.Method.ToString().PadRight(padCount, padChar));
-      callback.Invoke();
-      Console.WriteLine(string.Empty.PadRight(padCount, padChar));
-      Console.WriteLine();
-    }
-
-    private static void StrategyPattern() {
+    private static void StrategyPatternSample() {
       var duck1 = new Duck(new NoFlightStrategy());
       var duck2 = new Duck(new NormalFlightStrategy());
 
@@ -49,7 +43,7 @@ namespace DesignPatterns {
       duck2.Fly();
     }
 
-    private static void ObserverPattern() {
+    private static void ObserverPatternSample() {
       var observable = ObservableFactory.Of<string>();
 
       var observer1 = observable.Subscribe().Pipe(
@@ -67,32 +61,32 @@ namespace DesignPatterns {
       observable.Notify("New test notification");
     }
 
-    private static void DecoratorPattern() {
+    private static void DecoratorPatternSample() {
       AbstractBeverage tea = new Tea();
       AbstractBeverage teaWithChocolate = new ChocolateBeverageAddonDecorator(new Tea());
       Console.Out.WriteLine($"Tea: {tea}, tea with chocolate {teaWithChocolate}");
     }
 
-    private static void FactoryMethodPattern() {
+    private static void FactoryMethodPatternSample() {
       var objectCreatedByFactoryMethod = new Creator1().FactoryMethod();
       var otherMethodResult = new Creator1().OtherStuff();
     }
 
-    private static void AbstractFactoryPattern() {
+    private static void AbstractFactoryPatternSample() {
       IAbstractFactory factory = new ConcreteFactory();
 
       var product1 = factory.CreateProductA();
       var product2 = factory.CreateProductB();
     }
 
-    private static void SingletonPattern() {
+    private static void SingletonPatternSample() {
       var singleton1 = new Singleton();
       var singleton2 = new Singleton();
 
       Console.Out.WriteLine($"This should be true: {singleton1.GetInstance().Equals(singleton2.GetInstance())}");
     }
 
-    private static void CommandPattern() {
+    private static void CommandPatternSample() {
       var batchInvoker = new BatchInvoker();
       batchInvoker.Commands.Add(new LightOffCommand());
       batchInvoker.Commands.Add(new LightOffCommand());
@@ -111,19 +105,14 @@ namespace DesignPatterns {
       remote.RemoteKey2.Undo();
     }
 
-    private static void AdapterPattern() {
+    private static void AdapterPatternSample() {
       var adapter = new TargetAdapter(new Target());
       adapter.MyNameForOriginalPublish();
     }
 
-    private static void FacadePattern() {
+    private static void FacadePatternSample() {
       var facade = new Facade();
       facade.UseMethodBehindFacade("Sample");
-    }
-
-    private static void FinishApp() {
-      Console.Out.WriteLine("Stop...");
-      Console.ReadKey();
     }
   }
 }
