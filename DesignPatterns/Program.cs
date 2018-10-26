@@ -7,6 +7,7 @@ using DesignPatterns.CommandPattern;
 using DesignPatterns.DecoratorPattern;
 using DesignPatterns.DecoratorPattern.Beverages;
 using DesignPatterns.DecoratorPattern.Decorators;
+using DesignPatterns.FacadePattern;
 using DesignPatterns.FactoryMethodPattern.Factory;
 using DesignPatterns.ObserverPattern.WithSubscriber;
 using DesignPatterns.SingletonPattern;
@@ -25,6 +26,7 @@ namespace DesignPatterns {
       InvokeAsBlock(SingletonPattern);
       InvokeAsBlock(CommandPattern);
       InvokeAsBlock(AdapterPattern);
+      InvokeAsBlock(FacadePattern);
 
       FinishApp();
     }
@@ -112,6 +114,11 @@ namespace DesignPatterns {
     private static void AdapterPattern() {
       var adapter = new TargetAdapter(new Target());
       adapter.MyNameForOriginalPublish();
+    }
+
+    private static void FacadePattern() {
+      var facade = new Facade();
+      facade.UseMethodBehindFacade("Sample");
     }
 
     private static void FinishApp() {
