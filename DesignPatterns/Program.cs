@@ -10,11 +10,9 @@ using DesignPatterns.StrategyPattern;
 
 namespace DesignPatterns {
   public static class Program {
-    private static ConsoleUtilities consoleUtilities;
+    private static ConsoleUtilities consoleUtilities = new ConsoleUtilities();
 
     public static void Main() {
-      consoleUtilities = new ConsoleUtilities();
-
       // Order kept as in Christopher Okhravi series
       consoleUtilities.DisplayInBlock(new StrategyPatternSample());
       consoleUtilities.DisplayInBlock(new ObserverPatternWithSubscriberSample());
