@@ -10,10 +10,13 @@ using DesignPatterns.StrategyPattern;
 
 namespace DesignPatterns {
   public static class Program {
-    private static ConsoleUtilities consoleUtilities = new ConsoleUtilities();
+    private static readonly ConsoleUtilities consoleUtilities = new ConsoleUtilities();
 
     public static void Main() {
       // Order kept as in Christopher Okhravi series
+      // TODO: Provide readme file with observations & usage strategies and notes how I understand the patterns
+      // TODO: Confront understanding with GoF book
+      // TODO: Consider UML diagrams
       consoleUtilities.DisplayInBlock(new StrategyPatternSample());
       consoleUtilities.DisplayInBlock(new ObserverPatternWithSubscriberSample());
       consoleUtilities.DisplayInBlock(new DecoratorPatternSample());
@@ -23,6 +26,13 @@ namespace DesignPatterns {
       consoleUtilities.DisplayInBlock(new CommandPatternSample());
       consoleUtilities.DisplayInBlock(new AdapterPatternSample());
       consoleUtilities.DisplayInBlock(new FacadePatternSample());
+      // TODO: Add proxy pattern
+      // TODO: Add bridge pattern
+      // TODO: Template pattern
+      // TODO: Composite pattern
+      // TODO: Iterator pattern
+      // TODO: State pattern
+      // TODO: Null Object pattern
 
       consoleUtilities.PauseApp();
     }
