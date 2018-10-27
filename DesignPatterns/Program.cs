@@ -5,6 +5,7 @@ using DesignPatterns.DecoratorPattern;
 using DesignPatterns.FacadePattern;
 using DesignPatterns.FactoryMethodPattern;
 using DesignPatterns.ObserverPattern.WithSubscriber;
+using DesignPatterns.ProxyPattern;
 using DesignPatterns.SingletonPattern;
 using DesignPatterns.StrategyPattern;
 
@@ -26,7 +27,7 @@ namespace DesignPatterns {
       consoleUtilities.DisplayInBlock(new CommandPatternSample());
       consoleUtilities.DisplayInBlock(new AdapterPatternSample());
       consoleUtilities.DisplayInBlock(new FacadePatternSample());
-      // TODO: Add proxy pattern
+      consoleUtilities.DisplayInBlock(new ProxyPatternSample());
       // TODO: Add bridge pattern
       // TODO: Template pattern
       // TODO: Composite pattern
