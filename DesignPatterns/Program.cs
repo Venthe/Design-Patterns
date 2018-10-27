@@ -16,15 +16,15 @@ namespace DesignPatterns {
       consoleUtilities = new ConsoleUtilities();
 
       // Order kept as in Christopher Okhravi series
-      consoleUtilities.InvokeInConsoleBlock(new StrategyPatternSample());
-      consoleUtilities.InvokeInConsoleBlock(new ObserverPatternWithSubscriberSample());
-      consoleUtilities.InvokeInConsoleBlock(new DecoratorPatternSample());
-      consoleUtilities.InvokeInConsoleBlock(new FactoryMethodPatternSample());
-      consoleUtilities.InvokeInConsoleBlock(new AbstractFactoryPatternSample());
-      consoleUtilities.InvokeInConsoleBlock(new SingletonPatternSample());
-      consoleUtilities.InvokeInConsoleBlock(new CommandPatternSample());
-      consoleUtilities.InvokeInConsoleBlock(new AdapterPatternSample());
-      consoleUtilities.InvokeInConsoleBlock(new FacadePatternSample());
+      consoleUtilities.DisplayInBlock(new StrategyPatternSample());
+      consoleUtilities.DisplayInBlock(new ObserverPatternWithSubscriberSample());
+      consoleUtilities.DisplayInBlock(new DecoratorPatternSample());
+      consoleUtilities.DisplayInBlock(new FactoryMethodPatternSample());
+      consoleUtilities.DisplayInBlock(new AbstractFactoryPatternSample());
+      consoleUtilities.DisplayInBlock(new SingletonPatternSample());
+      consoleUtilities.DisplayInBlock(new CommandPatternSample());
+      consoleUtilities.DisplayInBlock(new AdapterPatternSample());
+      consoleUtilities.DisplayInBlock(new FacadePatternSample());
 
       consoleUtilities.PauseApp();
     }

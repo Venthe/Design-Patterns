@@ -10,7 +10,7 @@ namespace DesignPatterns {
       this.paddingCharacter = paddingCharacter;
     }
 
-    public void InvokeInConsoleBlock(IDesignPatternSample sample) {
+    public void DisplayInBlock(IDesignPatternSample sample) {
       Console.WriteLine(PadCenter(sample.GetType().Name));
       sample.ShowSample();
       Console.WriteLine(new string(paddingCharacter, maxLineLength));
