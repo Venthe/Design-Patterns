@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.AbstractFactoryPattern;
 using DesignPatterns.AdapterPattern;
+using DesignPatterns.BridgePattern;
 using DesignPatterns.CommandPattern;
 using DesignPatterns.DecoratorPattern;
 using DesignPatterns.FacadePattern;
@@ -28,7 +29,7 @@ namespace DesignPatterns {
       consoleUtilities.DisplayInBlock(new AdapterPatternSample());
       consoleUtilities.DisplayInBlock(new FacadePatternSample());
       consoleUtilities.DisplayInBlock(new ProxyPatternSample());
-      // TODO: Add bridge pattern
+      consoleUtilities.DisplayInBlock(new BridgePatternSample());
       // TODO: Template pattern
       // TODO: Composite pattern
       // TODO: Iterator pattern
