@@ -14,31 +14,27 @@ using DesignPatterns.TemplateMethodPattern;
 
 namespace DesignPatterns {
   public static class Program {
-    private static readonly ConsoleUtilities consoleUtilities = new ConsoleUtilities();
+    private static readonly ConsoleUtilities ConsoleUtilities = new ConsoleUtilities();
 
     public static void Main() {
       // Order kept as in Christopher Okhravi series
       // TODO: Provide readme file with observations & usage strategies and notes how I understand the patterns
       // TODO: Confront understanding with GoF book
       // TODO: Consider UML diagrams
-      consoleUtilities.DisplayInBlock(new StrategyPatternSample());
-      consoleUtilities.DisplayInBlock(new ObserverPatternWithSubscriberSample());
-      consoleUtilities.DisplayInBlock(new DecoratorPatternSample());
-      consoleUtilities.DisplayInBlock(new FactoryMethodPatternSample());
-      consoleUtilities.DisplayInBlock(new AbstractFactoryPatternSample());
-      consoleUtilities.DisplayInBlock(new SingletonPatternSample());
-      consoleUtilities.DisplayInBlock(new CommandPatternSample());
-      consoleUtilities.DisplayInBlock(new AdapterPatternSample());
-      consoleUtilities.DisplayInBlock(new FacadePatternSample());
-      consoleUtilities.DisplayInBlock(new ProxyPatternSample());
-      consoleUtilities.DisplayInBlock(new BridgePatternSample());
-      consoleUtilities.DisplayInBlock(new TemplateMethodPatternSample());
-      consoleUtilities.DisplayInBlock(new CompositePatternSample());
-      // TODO: Iterator pattern
-      // TODO: State pattern
-      // TODO: Null Object pattern
-
-      consoleUtilities.PauseApp();
+      ConsoleUtilities.DisplayInBlock(new StrategyPatternSample());
+      ConsoleUtilities.DisplayInBlock(new ObserverPatternWithSubscriberSample());
+      ConsoleUtilities.DisplayInBlock(new DecoratorPatternSample());
+      ConsoleUtilities.DisplayInBlock(new FactoryMethodPatternSample());
+      ConsoleUtilities.DisplayInBlock(new AbstractFactoryPatternSample());
+      ConsoleUtilities.DisplayInBlock(new SingletonPatternSample());
+      ConsoleUtilities.DisplayInBlock(new CommandPatternSample());
+      ConsoleUtilities.DisplayInBlock(new AdapterPatternSample());
+      ConsoleUtilities.DisplayInBlock(new FacadePatternSample());
+      ConsoleUtilities.DisplayInBlock(new ProxyPatternSample());
+      ConsoleUtilities.DisplayInBlock(new BridgePatternSample());
+      ConsoleUtilities.DisplayInBlock(new TemplateMethodPatternSample());
+      ConsoleUtilities.DisplayInBlock(new CompositePatternSample());
+      ConsoleUtilities.PauseApp();
     }
   }
 }

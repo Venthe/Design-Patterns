@@ -10,16 +10,16 @@ namespace DesignPatterns {
       this.paddingCharacter = paddingCharacter;
     }
 
+    public static void PauseApp(string text = "Pause...") {
+      Console.Out.WriteLine(text);
+      Console.ReadKey();
+    }
+
     public void DisplayInBlock(IDesignPatternSample sample) {
       Console.WriteLine(PadCenter(sample.GetType().Name));
       sample.ShowSample();
       Console.WriteLine(new string(paddingCharacter, maxLineLength));
       Console.WriteLine();
-    }
-
-    public void PauseApp(string text = "Pause...") {
-      Console.Out.WriteLine(text);
-      Console.ReadKey();
     }
 
     private string PadCenter(string text) {

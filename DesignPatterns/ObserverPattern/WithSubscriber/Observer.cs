@@ -11,9 +11,10 @@ namespace DesignPatterns.ObserverPattern.WithSubscriber {
     public void Unsubscribe() => observable.Unsubscribe(this);
 
     public void Update(T data) {
-      T State = data;
+      var state = data;
       if (transformations != null && transformations.Length != 0) {
-        new List<Func<dynamic, dynamic>>(transformations).ForEach(transformation => State = transformation(State));
+        new List<Func<dynamic, dynamic>>(transformations)
+          .ForEach(transformation => state = transformation?.Invoke(state));
       }
     }
 

@@ -1,6 +1,7 @@
 ﻿namespace DesignPatterns.CommandPattern {
   public class Remote {
-    public ICommand RemoteKey1 { set; get; }
-    public ICommand RemoteKey2 { set; get; }
+    public ICommand RemoteKey1 { get; set; }
+
+    public ICommand RemoteKey2 { get; set; }
   }
 }

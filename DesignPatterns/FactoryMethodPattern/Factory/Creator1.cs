@@ -3,7 +3,7 @@
 namespace DesignPatterns.FactoryMethodPattern.Factory {
   // Should be only used as concrete factory method
   public class Creator1 {
-    public IProduct FactoryMethod() {
+    public static IProduct FactoryMethod() {
       Console.Out.WriteLine($"Factory method called, will create {nameof(Product)} with {nameof(IProduct)} type");
       return new Product();
     }

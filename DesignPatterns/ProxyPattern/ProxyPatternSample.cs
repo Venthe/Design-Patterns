@@ -11,14 +11,14 @@ namespace DesignPatterns.ProxyPattern {
       RemoteProxySample();
     }
 
-    private void VirtualProxySample() {
+    private static void VirtualProxySample() {
       IExampleExpensiveObject withProxy = new VirtualProxy("JIT");
       IExampleExpensiveObject withoutProxy = new ExampleExpensiveObject("AOT");
       Console.Out.WriteLine(withoutProxy.Text);
       Console.Out.WriteLine(withProxy.Text);
     }
 
-    private void ProtectionProxySample() {
+    private static void ProtectionProxySample() {
       var classWithoutPermission = new ProtectionProxy(false);
       ErrorUtilities.LogException(classWithoutPermission.SensitiveMethod);
 
@@ -26,7 +26,7 @@ namespace DesignPatterns.ProxyPattern {
       Console.Out.WriteLine(classWithPermission.SensitiveMethod());
     }
 
-    private void RemoteProxySample() {
+    private static void RemoteProxySample() {
       var remoteProxy = new RemoteProxy();
       Console.Out.WriteLine($"Will block until I get this data: {remoteProxy.GetData()}");
     }

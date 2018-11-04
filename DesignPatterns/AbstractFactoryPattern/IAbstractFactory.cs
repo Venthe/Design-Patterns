@@ -4,6 +4,7 @@
   // Should be used by DI
   public interface IAbstractFactory {
     IProductA CreateProductA();
+
     IProductB CreateProductB();
   }
 }
