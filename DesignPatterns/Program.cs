@@ -2,6 +2,7 @@
 using DesignPatterns.AdapterPattern;
 using DesignPatterns.BridgePattern;
 using DesignPatterns.CommandPattern;
+using DesignPatterns.CompositePattern;
 using DesignPatterns.DecoratorPattern;
 using DesignPatterns.FacadePattern;
 using DesignPatterns.FactoryMethodPattern;
@@ -32,7 +33,7 @@ namespace DesignPatterns {
       consoleUtilities.DisplayInBlock(new ProxyPatternSample());
       consoleUtilities.DisplayInBlock(new BridgePatternSample());
       consoleUtilities.DisplayInBlock(new TemplateMethodPatternSample());
-      // TODO: Composite pattern
+      consoleUtilities.DisplayInBlock(new CompositePatternSample());
       // TODO: Iterator pattern
       // TODO: State pattern
       // TODO: Null Object pattern
