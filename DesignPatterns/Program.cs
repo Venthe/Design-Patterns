@@ -34,6 +34,10 @@ namespace DesignPatterns {
       ConsoleUtilities.DisplayInBlock(new BridgePatternSample());
       ConsoleUtilities.DisplayInBlock(new TemplateMethodPatternSample());
       ConsoleUtilities.DisplayInBlock(new CompositePatternSample());
+
+      // TODO: Iterator pattern
+      // TODO: State pattern
+      // TODO: Null Object pattern
       ConsoleUtilities.PauseApp();
     }
   }
