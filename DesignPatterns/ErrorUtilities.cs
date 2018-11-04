@@ -1,20 +1,23 @@
 ﻿using System;
 
 namespace DesignPatterns {
-  // TODO: Convert to attribute
-  public static class ErrorUtilities {
+  public sealed class ErrorUtilities : Attribute {
     public static void LogException(Action action) {
       try {
-        action.Invoke();
+        action?.Invoke();
       }
       catch (Exception exception) {
         LogExceptionAsConsole(exception);
       }
     }
 
-    public static T LogException<T>(Func<T> func) {
+    public static T LogException<T>(Func<T> function) {
+      if (function == null) {
+        return default(T);
+      }
+
       try {
-        return func.Invoke();
+        return function.Invoke();
       }
       catch (Exception exception) {
         LogExceptionAsConsole(exception);
@@ -23,6 +26,6 @@ namespace DesignPatterns {
       return default(T);
     }
 
-    private static void LogExceptionAsConsole(Exception e) => Console.Out.WriteLine($"{e.GetType().Name}: {e.Message}");
+    private static void LogExceptionAsConsole(Exception exception) => Console.Out.WriteLine(exception);
   }
 }
