@@ -9,6 +9,7 @@ using DesignPatterns.ObserverPattern.WithSubscriber;
 using DesignPatterns.ProxyPattern;
 using DesignPatterns.SingletonPattern;
 using DesignPatterns.StrategyPattern;
+using DesignPatterns.TemplateMethodPattern;
 
 namespace DesignPatterns {
   public static class Program {
@@ -30,7 +31,7 @@ namespace DesignPatterns {
       consoleUtilities.DisplayInBlock(new FacadePatternSample());
       consoleUtilities.DisplayInBlock(new ProxyPatternSample());
       consoleUtilities.DisplayInBlock(new BridgePatternSample());
-      // TODO: Template pattern
+      consoleUtilities.DisplayInBlock(new TemplateMethodPatternSample());
       // TODO: Composite pattern
       // TODO: Iterator pattern
       // TODO: State pattern
