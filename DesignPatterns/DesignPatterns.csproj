@@ -1,8 +1,133 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{185FE182-0FF4-4657-9378-7BC8767BC8AD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactoryPattern\AbstractFactoryPatternSample.cs" />
+    <Compile Include="AbstractFactoryPattern\IAbstractFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\IProductA.cs" />
+    <Compile Include="AbstractFactoryPattern\IProductB.cs" />
+    <Compile Include="AbstractFactoryPattern\ProductFamily1\ConcreteFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\ProductFamily1\ProductA.cs" />
+    <Compile Include="AbstractFactoryPattern\ProductFamily1\ProductB.cs" />
+    <Compile Include="AdapterPattern\AdapterPatternSample.cs" />
+    <Compile Include="AdapterPattern\ITargetAdapter.cs" />
+    <Compile Include="AdapterPattern\TargetAdapter.cs" />
+    <Compile Include="AdapterPattern\Target\ITarget.cs" />
+    <Compile Include="AdapterPattern\Target\NonAdaptedTarget.cs" />
+    <Compile Include="BridgePattern\Abstractor.cs" />
+    <Compile Include="BridgePattern\BridgePatternSample.cs" />
+    <Compile Include="BridgePattern\ConcreteAbstractor.cs" />
+    <Compile Include="BridgePattern\ConcreteImplementor.cs" />
+    <Compile Include="BridgePattern\IImplementor.cs" />
+    <Compile Include="CommandPattern\BatchInvoker.cs" />
+    <Compile Include="CommandPattern\CommandPatternSample.cs" />
+    <Compile Include="CommandPattern\ICommand.cs" />
+    <Compile Include="CommandPattern\LightOffCommand.cs" />
+    <Compile Include="CommandPattern\LightOnCommand.cs" />
+    <Compile Include="CommandPattern\Remote.cs" />
+    <Compile Include="CompositePattern\CompositeContainer.cs" />
+    <Compile Include="CompositePattern\CompositePatternSample.cs" />
+    <Compile Include="CompositePattern\IComposite.cs" />
+    <Compile Include="CompositePattern\Leaf.cs" />
+    <Compile Include="ConsoleUtilities.cs" />
+    <Compile Include="DecoratorPattern\AbstractBeverage.cs" />
+    <Compile Include="DecoratorPattern\AbstractBeverageAddonDecorator.cs" />
+    <Compile Include="DecoratorPattern\Beverages\Coffee.cs" />
+    <Compile Include="DecoratorPattern\Beverages\Tea.cs" />
+    <Compile Include="DecoratorPattern\DecoratorPatternSample.cs" />
+    <Compile Include="DecoratorPattern\Decorators\CaramelBeverageAddonDecorator.cs" />
+    <Compile Include="DecoratorPattern\Decorators\ChocolateBeverageAddonDecorator.cs" />
+    <Compile Include="ErrorUtilities.cs" />
+    <Compile Include="FacadePattern\ComplexSystem\ComplexSystemEntryPoint.cs" />
+    <Compile Include="FacadePattern\Facade.cs" />
+    <Compile Include="FacadePattern\FacadePatternSample.cs" />
+    <Compile Include="FactoryMethodPattern\FactoryMethodPatternSample.cs" />
+    <Compile Include="FactoryMethodPattern\Factory\Creator1.cs" />
+    <Compile Include="FactoryMethodPattern\Factory\Product.cs" />
+    <Compile Include="FactoryMethodPattern\IProduct.cs" />
+    <Compile Include="IDesignPatternSample.cs" />
+    <Compile Include="ObserverPattern\Pure\IObservable.cs" />
+    <Compile Include="ObserverPattern\Pure\IObserver.cs" />
+    <Compile Include="ObserverPattern\Pure\Observable.cs" />
+    <Compile Include="ObserverPattern\Pure\Observer.cs" />
+    <Compile Include="ObserverPattern\WithData\IObservable.cs" />
+    <Compile Include="ObserverPattern\WithData\IObserver.cs" />
+    <Compile Include="ObserverPattern\WithData\Observable.cs" />
+    <Compile Include="ObserverPattern\WithData\Observer.cs" />
+    <Compile Include="ObserverPattern\WithSubscriber\IObservable.cs" />
+    <Compile Include="ObserverPattern\WithSubscriber\IObserver.cs" />
+    <Compile Include="ObserverPattern\WithSubscriber\Observable.cs" />
+    <Compile Include="ObserverPattern\WithSubscriber\ObservableFactory.cs" />
+    <Compile Include="ObserverPattern\WithSubscriber\Observer.cs" />
+    <Compile Include="ObserverPattern\WithSubscriber\ObserverPatternWithSubscriberSample.cs" />
+    <Compile Include="ObserverPattern\WithSubscriber\SampleTransformations.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyPattern\Protection\ISensitiveClass.cs" />
+    <Compile Include="ProxyPattern\Protection\ProtectionProxy.cs" />
+    <Compile Include="ProxyPattern\Protection\SensitiveClass.cs" />
+    <Compile Include="ProxyPattern\ProxyPatternSample.cs" />
+    <Compile Include="ProxyPattern\Remote\IRemoteResourceAccessor.cs" />
+    <Compile Include="ProxyPattern\Remote\RemoteProxy.cs" />
+    <Compile Include="ProxyPattern\Remote\RemoteResourceAccessor.cs" />
+    <Compile Include="ProxyPattern\Virtual\ExampleExpensiveObject.cs" />
+    <Compile Include="ProxyPattern\Virtual\IExampleExpensiveObject.cs" />
+    <Compile Include="ProxyPattern\Virtual\VirtualProxy.cs" />
+    <Compile Include="SingletonPattern\Singleton.cs" />
+    <Compile Include="SingletonPattern\SingletonPatternSample.cs" />
+    <Compile Include="StrategyPattern\Duck.cs" />
+    <Compile Include="StrategyPattern\FlyStrategy\IFlyStrategy.cs" />
+    <Compile Include="StrategyPattern\FlyStrategy\NoFlightStrategy.cs" />
+    <Compile Include="StrategyPattern\FlyStrategy\NormalFlightStrategy.cs" />
+    <Compile Include="StrategyPattern\IDuck.cs" />
+    <Compile Include="StrategyPattern\StrategyPatternSample.cs" />
+    <Compile Include="TemplateMethodPattern\AbstractTemplateMethod.cs" />
+    <Compile Include="TemplateMethodPattern\ConcreteTemplateMethod.cs" />
+    <Compile Include="TemplateMethodPattern\TemplateMethodPatternSample.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
