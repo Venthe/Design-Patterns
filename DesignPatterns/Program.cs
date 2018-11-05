@@ -1,16 +1,17 @@
-﻿using DesignPatterns.AbstractFactoryPattern;
-using DesignPatterns.AdapterPattern;
-using DesignPatterns.BridgePattern;
-using DesignPatterns.CommandPattern;
-using DesignPatterns.CompositePattern;
-using DesignPatterns.DecoratorPattern;
-using DesignPatterns.FacadePattern;
-using DesignPatterns.FactoryMethodPattern;
-using DesignPatterns.ObserverPattern.WithSubscriber;
-using DesignPatterns.ProxyPattern;
-using DesignPatterns.SingletonPattern;
-using DesignPatterns.StrategyPattern;
-using DesignPatterns.TemplateMethodPattern;
+﻿using DesignPatterns.Pattern.AbstractFactoryPattern;
+using DesignPatterns.Pattern.AdapterPattern;
+using DesignPatterns.Pattern.BridgePattern;
+using DesignPatterns.Pattern.CommandPattern;
+using DesignPatterns.Pattern.CompositePattern;
+using DesignPatterns.Pattern.DecoratorPattern;
+using DesignPatterns.Pattern.FacadePattern;
+using DesignPatterns.Pattern.FactoryMethodPattern;
+using DesignPatterns.Pattern.ObserverPattern.WithSubscriber;
+using DesignPatterns.Pattern.ProxyPattern;
+using DesignPatterns.Pattern.SingletonPattern;
+using DesignPatterns.Pattern.StrategyPattern;
+using DesignPatterns.Pattern.TemplateMethodPattern;
+using DesignPatterns.Utilities;
 
 #pragma warning disable SA1515
 #pragma warning disable SA1512
