@@ -20,7 +20,7 @@ namespace DesignPatterns.Pattern.ObserverPattern.WithSubscriber {
       // Observer that we cannot manually destroy; will have to be garbage collected
       observable.Subscribe();
 
-      Console.Out.WriteLine($"Should show text: \"{SampleText}\" mapped accordingly");
+      Console.WriteLine($"Should show text: \"{SampleText}\" mapped accordingly");
       observable.Notify(SampleText);
     }
   }

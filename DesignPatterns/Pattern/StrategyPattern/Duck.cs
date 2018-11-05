@@ -10,7 +10,7 @@ namespace DesignPatterns.Pattern.StrategyPattern {
     }
 
     public void Fly() {
-      Console.Out.WriteLine($"Duck with \"{flyStrategy.Fly()}\" flying strategy");
+      Console.WriteLine($"Duck with \"{flyStrategy.Fly()}\" flying strategy");
     }
   }
 }

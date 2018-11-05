@@ -5,7 +5,7 @@ namespace DesignPatterns.Pattern.BridgePattern {
     public void ShowSample() {
       var bridgeExample = new ConcreteAbstractor();
 
-      Console.Out.WriteLine(bridgeExample.DoThings());
+      Console.WriteLine(bridgeExample.DoThings());
     }
   }
 }

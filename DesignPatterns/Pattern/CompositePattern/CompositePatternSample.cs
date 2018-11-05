@@ -10,9 +10,9 @@ namespace DesignPatterns.Pattern.CompositePattern {
       var leaf1 = new Leaf("Leaf 1");
       var root = ComposeRoot(container1, leaf1);
 
-      Console.Out.WriteLine("Leaf1: " + leaf1.Name);
-      Console.Out.WriteLine("root: " + root.Name);
-      Console.Out.WriteLine("container 1: " + container1.Name);
+      Console.WriteLine("Leaf1: " + leaf1.Name);
+      Console.WriteLine("root: " + root.Name);
+      Console.WriteLine("container 1: " + container1.Name);
     }
 
     private static CompositeContainer GetContainer1() {

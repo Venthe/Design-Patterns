@@ -8,7 +8,7 @@ namespace DesignPatterns.Pattern.TemplateMethodPattern {
     public void ShowSample() {
       var templateMethod = new ConcreteTemplateMethod();
 
-      Console.Out.WriteLine(templateMethod.TemplateMethod());
+      Console.WriteLine(templateMethod.TemplateMethod());
     }
   }
 }

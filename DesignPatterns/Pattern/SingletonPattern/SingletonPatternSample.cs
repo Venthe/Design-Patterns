@@ -6,7 +6,7 @@ namespace DesignPatterns.Pattern.SingletonPattern {
       var singleton1 = new Singleton();
       var singleton2 = new Singleton();
 
-      Console.Out.WriteLine($"This should be true: {singleton1.GetInstance().Equals(singleton2.GetInstance())}");
+      Console.WriteLine($"This should be true: {singleton1.GetInstance().Equals(singleton2.GetInstance())}");
     }
   }
 }

@@ -9,8 +9,8 @@ namespace DesignPatterns.Pattern.AbstractFactoryPattern {
       var product1 = factory.CreateProductA();
       var product2 = factory.CreateProductB();
 
-      Console.Out.WriteLine($"{nameof(IAbstractFactory)} {nameof(ConcreteFactory)} creates {nameof(IProductA)} {factory.CreateProductA().GetType().Name}");
-      Console.Out.WriteLine($"{nameof(IAbstractFactory)} {nameof(ConcreteFactory)} creates {nameof(IProductB)} {factory.CreateProductB().GetType().Name}");
+      Console.WriteLine($"{nameof(IAbstractFactory)} {nameof(ConcreteFactory)} creates {nameof(IProductA)} {factory.CreateProductA().GetType().Name}");
+      Console.WriteLine($"{nameof(IAbstractFactory)} {nameof(ConcreteFactory)} creates {nameof(IProductB)} {factory.CreateProductB().GetType().Name}");
     }
   }
 }

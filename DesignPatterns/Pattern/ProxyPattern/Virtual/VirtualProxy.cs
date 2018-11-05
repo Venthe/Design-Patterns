@@ -8,7 +8,7 @@ namespace DesignPatterns.Pattern.ProxyPattern.Virtual {
     private ExampleExpensiveObject expensiveObject;
 
     public VirtualProxy(string seed) {
-      Console.Out.WriteLine("[Proxy] Constructor");
+      Console.WriteLine("[Proxy] Constructor");
       this.seed = seed;
     }
 
@@ -22,7 +22,7 @@ namespace DesignPatterns.Pattern.ProxyPattern.Virtual {
 
     private void TryInstantiateExpensiveObject() {
       if (expensiveObject == null) {
-        Console.Out.WriteLine("[Proxy] Deferred instantiation");
+        Console.WriteLine("[Proxy] Deferred instantiation");
         expensiveObject = new ExampleExpensiveObject(seed);
       }
     }

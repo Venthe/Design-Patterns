@@ -7,7 +7,7 @@ namespace DesignPatterns.Pattern.FactoryMethodPattern {
       var objectCreatedByFactoryMethod = Creator1.FactoryMethod();
       var otherMethodResult = new Creator1().OtherStuff();
 
-      Console.Out.WriteLine($"FactoryMethod owner can have other methods: {otherMethodResult}");
+      Console.WriteLine($"FactoryMethod owner can have other methods: {otherMethodResult}");
     }
   }
 }

@@ -12,7 +12,7 @@ namespace DesignPatterns.Utilities {
     }
 
     public static void PauseApp(string text = "Pause...") {
-      Console.Out.WriteLine(text);
+      Console.WriteLine(text);
       Console.ReadKey();
     }
 

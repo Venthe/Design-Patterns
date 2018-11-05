@@ -22,6 +22,6 @@ namespace DesignPatterns.Utilities {
       return default(T);
     }
 
-    private static void LogExceptionAsConsole(Exception exception) => Console.Out.WriteLine(exception.ToString());
+    private static void LogExceptionAsConsole(Exception exception) => Console.WriteLine(exception.ToString());
   }
 }
