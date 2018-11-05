@@ -6,6 +6,7 @@ using DesignPatterns.Pattern.CompositePattern;
 using DesignPatterns.Pattern.DecoratorPattern;
 using DesignPatterns.Pattern.FacadePattern;
 using DesignPatterns.Pattern.FactoryMethodPattern;
+using DesignPatterns.Pattern.IteratorPattern;
 using DesignPatterns.Pattern.ObserverPattern.WithSubscriber;
 using DesignPatterns.Pattern.ProxyPattern;
 using DesignPatterns.Pattern.SingletonPattern;
@@ -56,9 +57,9 @@ namespace DesignPatterns {
       ConsoleUtilities.DisplayInBlock(new ObserverPatternWithSubscriberSample());
       ConsoleUtilities.DisplayInBlock(new CommandPatternSample());
       ConsoleUtilities.DisplayInBlock(new TemplateMethodPatternSample());
+      ConsoleUtilities.DisplayInBlock(new IteratorPatternSample());
       // TODO: Chain of responsibility pattern
       // TODO: Interpreter pattern
-      // TODO: Iterator pattern
       // TODO: Mediator pattern
       // TODO: Memento pattern
       // TODO: State pattern
