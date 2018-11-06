@@ -5,6 +5,6 @@
     private readonly RemoteResourceAccessor remoteResource = new RemoteResourceAccessor();
 
     // HTTP Code
-    public string GetData() => remoteResource.RemoteRESTApiEndpoint().Result;
+    public string GetData() => remoteResource.RemoteRESTApiEndpointAsync().Result;
   }
 }
