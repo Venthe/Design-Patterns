@@ -58,11 +58,11 @@ namespace DesignPatterns {
       ConsoleUtilities.DisplayInBlock(new CommandPatternSample());
       ConsoleUtilities.DisplayInBlock(new TemplateMethodPatternSample());
       ConsoleUtilities.DisplayInBlock(new IteratorPatternSample());
+      ConsoleUtilities.DisplayInBlock(new StatePatternSample());
       // TODO: Chain of responsibility pattern
       // TODO: Interpreter pattern
       // TODO: Mediator pattern
       // TODO: Memento pattern
-      // TODO: State pattern
       // TODO: Visitor pattern
     }
 

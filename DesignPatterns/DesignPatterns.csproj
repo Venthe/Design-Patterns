@@ -82,6 +82,12 @@
     <Compile Include="Pattern\IteratorPattern\IIteratee.cs" />
     <Compile Include="Pattern\IteratorPattern\IIterator.cs" />
     <Compile Include="Pattern\IteratorPattern\IteratorPatternSample.cs" />
+    <Compile Include="Pattern\StatePattern\ITurnstileState.cs" />
+    <Compile Include="Pattern\StatePattern\ClosedState.cs" />
+    <Compile Include="Pattern\StatePattern\OpenState.cs" />
+    <Compile Include="Pattern\StatePattern\ProcessingPaymentState.cs" />
+    <Compile Include="Pattern\StatePattern\StatePatternSample.cs" />
+    <Compile Include="Pattern\StatePattern\TurnstileContextDecorator.cs" />
     <Compile Include="Utilities\ConsoleUtilities.cs" />
     <Compile Include="Pattern\DecoratorPattern\AbstractBeverage.cs" />
     <Compile Include="Pattern\DecoratorPattern\AbstractBeverageAddonDecorator.cs" />
@@ -150,5 +156,6 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
