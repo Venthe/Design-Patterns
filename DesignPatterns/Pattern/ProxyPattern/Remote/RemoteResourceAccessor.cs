@@ -6,7 +6,7 @@ namespace DesignPatterns.Pattern.ProxyPattern.Remote {
     public string GetData() => "Sample async data";
 
     public async Task<string> RemoteRESTApiEndpointAsync() {
-      await Task.Delay(2000).ConfigureAwait(false);
+      await Task.Delay(500).ConfigureAwait(false);
       return GetData();
     }
   }
