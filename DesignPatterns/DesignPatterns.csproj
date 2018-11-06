@@ -67,6 +67,11 @@
     <Compile Include="Pattern\BridgePattern\ConcreteAbstractor.cs" />
     <Compile Include="Pattern\BridgePattern\ConcreteImplementor.cs" />
     <Compile Include="Pattern\BridgePattern\IImplementor.cs" />
+    <Compile Include="Pattern\BuilderPattern\BuilderPatternSample.cs" />
+    <Compile Include="Pattern\BuilderPattern\Car.cs" />
+    <Compile Include="Pattern\BuilderPattern\FerrariBuilder.cs" />
+    <Compile Include="Pattern\BuilderPattern\ICar.cs" />
+    <Compile Include="Pattern\BuilderPattern\ICarBuilder.cs" />
     <Compile Include="Pattern\CommandPattern\BatchInvoker.cs" />
     <Compile Include="Pattern\CommandPattern\CommandPatternSample.cs" />
     <Compile Include="Pattern\CommandPattern\ICommand.cs" />

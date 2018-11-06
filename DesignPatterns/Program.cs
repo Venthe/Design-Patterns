@@ -1,6 +1,7 @@
 ﻿using DesignPatterns.Pattern.AbstractFactoryPattern;
 using DesignPatterns.Pattern.AdapterPattern;
 using DesignPatterns.Pattern.BridgePattern;
+using DesignPatterns.Pattern.BuilderPattern;
 using DesignPatterns.Pattern.CommandPattern;
 using DesignPatterns.Pattern.CompositePattern;
 using DesignPatterns.Pattern.DecoratorPattern;
@@ -39,7 +40,7 @@ namespace DesignPatterns {
       ConsoleUtilities.DisplayInBlock(new AbstractFactoryPatternSample());
       ConsoleUtilities.DisplayInBlock(new FactoryMethodPatternSample());
       ConsoleUtilities.DisplayInBlock(new SingletonPatternSample());
-      // TODO: Builder pattern
+      ConsoleUtilities.DisplayInBlock(new BuilderPatternSample());
       // TODO: Prototype pattern
     }
 
