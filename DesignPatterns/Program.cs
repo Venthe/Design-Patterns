@@ -7,6 +7,7 @@ using DesignPatterns.Pattern.DecoratorPattern;
 using DesignPatterns.Pattern.FacadePattern;
 using DesignPatterns.Pattern.FactoryMethodPattern;
 using DesignPatterns.Pattern.IteratorPattern;
+using DesignPatterns.Pattern.NullObjectpattern;
 using DesignPatterns.Pattern.ObserverPattern.WithSubscriber;
 using DesignPatterns.Pattern.ProxyPattern;
 using DesignPatterns.Pattern.SingletonPattern;
@@ -67,7 +68,7 @@ namespace DesignPatterns {
     }
 
     private static void OtherPatterns() {
-      // TODO: Null Object pattern
+      ConsoleUtilities.DisplayInBlock(new NullObjectPatternSample());
     }
   }
 }
