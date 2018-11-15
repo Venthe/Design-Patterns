@@ -1,7 +1,7 @@
 ﻿using System;
 using DesignPatterns.Pattern.StatePattern;
 
-namespace DesignPatterns.Pattern.StrategyPattern {
+namespace DesignPatterns.Pattern.StatePattern {
   // Allows an object to alter it's behaviour when it's internal state changes.
   // Object will appear to change it's class
   public class StatePatternSample : IDesignPatternSample {

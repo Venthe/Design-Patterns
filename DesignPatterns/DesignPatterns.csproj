@@ -98,6 +98,15 @@
     <Compile Include="Pattern\StatePattern\ProcessingPaymentState.cs" />
     <Compile Include="Pattern\StatePattern\StatePatternSample.cs" />
     <Compile Include="Pattern\StatePattern\TurnstileContextDecorator.cs" />
+    <Compile Include="Pattern\VisitorPattern\Visitee\BankAccount.cs" />
+    <Compile Include="Pattern\VisitorPattern\Visitor\IncomeVisitor.cs" />
+    <Compile Include="Pattern\VisitorPattern\Visitor\IPersonVisitor.cs" />
+    <Compile Include="Pattern\VisitorPattern\Visitee\IVisitee.cs" />
+    <Compile Include="Pattern\VisitorPattern\Visitee\Loan.cs" />
+    <Compile Include="Pattern\VisitorPattern\Person.cs" />
+    <Compile Include="Pattern\VisitorPattern\Visitee\RealEstate.cs" />
+    <Compile Include="Pattern\VisitorPattern\VisitorPatternSample.cs" />
+    <Compile Include="Pattern\VisitorPattern\Visitor\NetWorthVisitor.cs" />
     <Compile Include="Utilities\ConsoleUtilities.cs" />
     <Compile Include="Pattern\DecoratorPattern\AbstractBeverage.cs" />
     <Compile Include="Pattern\DecoratorPattern\AbstractBeverageAddonDecorator.cs" />

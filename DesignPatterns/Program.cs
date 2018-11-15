@@ -12,8 +12,10 @@ using DesignPatterns.Pattern.NullObjectpattern;
 using DesignPatterns.Pattern.ObserverPattern.WithSubscriber;
 using DesignPatterns.Pattern.ProxyPattern;
 using DesignPatterns.Pattern.SingletonPattern;
+using DesignPatterns.Pattern.StatePattern;
 using DesignPatterns.Pattern.StrategyPattern;
 using DesignPatterns.Pattern.TemplateMethodPattern;
+using DesignPatterns.Pattern.VisitorPattern;
 using DesignPatterns.Utilities;
 
 #pragma warning disable SA1515
@@ -61,11 +63,11 @@ namespace DesignPatterns {
       ConsoleUtilities.DisplayInBlock(new TemplateMethodPatternSample());
       ConsoleUtilities.DisplayInBlock(new IteratorPatternSample());
       ConsoleUtilities.DisplayInBlock(new StatePatternSample());
+      ConsoleUtilities.DisplayInBlock(new VisitorPatternSample());
       // TODO: Chain of responsibility pattern
       // TODO: Interpreter pattern
       // TODO: Mediator pattern
       // TODO: Memento pattern
-      // TODO: Visitor pattern
     }
 
     private static void OtherPatterns() {
