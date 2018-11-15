@@ -12,4 +12,5 @@
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CC0091:Use static method", Justification = "Sample application", Scope = "member", Target = "~M:DesignPatterns.Pattern.FacadePattern.ComplexSystem.ComplexSystemEntryPoint.MethodThatHasToBeCalledLast")]
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CC0091:Use static method", Justification = "Singleton access", Scope = "member", Target = "~M:DesignPatterns.Pattern.SingletonPattern.Singleton.GetInstance~DesignPatterns.Pattern.SingletonPattern.Singleton")]
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CC0091:Use static method", Justification = "Sample usage", Scope = "member", Target = "~M:DesignPatterns.Pattern.FactoryMethodPattern.Factory.Creator1.OtherStuff~System.String")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1124:Do not use regions", Justification = "Preference", Scope = "member", Target = "~M:DesignPatterns.Program.CreationalPatterns")]
 

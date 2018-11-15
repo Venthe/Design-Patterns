@@ -28,24 +28,20 @@ namespace DesignPatterns {
     // TODO: Confront understanding with "Design Patterns: Elements of Reusable Object-Oriented Software" book
     // TODO: Consider UML diagrams
     public static void Main() {
-      CreationalPatterns();
-      StructuralPattterns();
-      BehavioralPatterns();
-      OtherPatterns();
-      DomainLogicPatterns();
-      DataSourceArchitecturalPatterns();
-      ObjectRelationalBehavioralPatterns();
-      ObjectRelationalStructuralPatterns();
-      ObjectRelationalMetadataMappingPatterns();
-      WebPresentationPatterns();
-      DistributionPatterns();
-      OfflineConcurrencyPatterns();
-      SessionStatePatterns();
-      BasePatterns();
+      SoftwareDesignPatterns();
+      EnterpriseArchitectureDesignPatterns();
 
       ConsoleUtilities.PauseApp();
     }
 
+    private static void SoftwareDesignPatterns() {
+      CreationalPatterns();
+      StructuralPattterns();
+      BehavioralPatterns();
+      OtherPatterns();
+    }
+
+    #region Software Design Patterns
     private static void CreationalPatterns() {
       ConsoleUtilities.DisplayInBlock(new AbstractFactoryPatternSample());
       ConsoleUtilities.DisplayInBlock(new FactoryMethodPatternSample());
@@ -81,53 +77,40 @@ namespace DesignPatterns {
     private static void OtherPatterns() {
       ConsoleUtilities.DisplayInBlock(new NullObjectPatternSample());
     }
+    #endregion
 
-    private static void BasePatterns() {
-      // TODO: Gateway pattern
-      // TODO: Mapper pattern
-      // TODO: Layer Supertype pattern
-      // TODO: Separated Interface pattern
-      // TODO: Registry pattern
-      // TODO: Value Object pattern
-      // TODO: Money pattern
-      // TODO: Special Case pattern
-      // TODO: Plugin pattern
-      // TODO: Service Stub pattern
-      // TODO: Record Set pattern
+    private static void EnterpriseArchitectureDesignPatterns() {
+      DomainLogicPatterns();
+      DataSourceArchitecturalPatterns();
+      ObjectRelationalBehavioralPatterns();
+      ObjectRelationalStructuralPatterns();
+      ObjectRelationalMetadataMappingPatterns();
+      WebPresentationPatterns();
+      DistributionPatterns();
+      OfflineConcurrencyPatterns();
+      SessionStatePatterns();
+      BasePatterns();
     }
 
-    private static void SessionStatePatterns() {
-      // TODO: Client Session State pattern
-      // TODO: Server Session State pattern
-      // TODO: Database Session State pattern
+    #region Enterprise Architecture Design Patterns
+    private static void DomainLogicPatterns() {
+      // TODO: Transaction Script pattern
+      // TODO: Domain Model pattern
+      // TODO: Table Module pattern
+      // TODO: Service Layer pattern
     }
 
-    private static void OfflineConcurrencyPatterns() {
-      // TODO: Optimistic Offline Lock pattern
-      // TODO: Pessimistic Offline Lock pattern
-      // TODO: Coarse Grained Lock pattern
-      // TODO: Implicit Lock pattern
+    private static void DataSourceArchitecturalPatterns() {
+      // TODO: Table Data Gateway pattern
+      // TODO: Row Data Gateway pattern
+      // TODO: Active Record pattern
+      // TODO: Data Mapper pattern
     }
 
-    private static void DistributionPatterns() {
-      // TODO: Remote Facade pattern
-      // TODO: Data Transfer Object pattern
-    }
-
-    private static void WebPresentationPatterns() {
-      // TODO: Model View Controller pattern
-      // TODO: Page Controller pattern
-      // TODO: Front Controller pattern
-      // TODO: Template View pattern
-      // TODO: Transform View pattern
-      // TODO: Two-Step View pattern
-      // TODO: Application Controller pattern
-    }
-
-    private static void ObjectRelationalMetadataMappingPatterns() {
-      // TODO: Metadata Mapping pattern
-      // TODO: Query Object pattern
-      // TODO: Repository pattern
+    private static void ObjectRelationalBehavioralPatterns() {
+      // TODO: Unit of Work pattern
+      // TODO: Identity Map pattern
+      // TODO: Lazy Load pattern
     }
 
     private static void ObjectRelationalStructuralPatterns() {
@@ -143,24 +126,53 @@ namespace DesignPatterns {
       // TODO: Inheritance Mappers pattern
     }
 
-    private static void ObjectRelationalBehavioralPatterns() {
-      // TODO: Unit of Work pattern
-      // TODO: Identity Map pattern
-      // TODO: Lazy Load pattern
+    private static void ObjectRelationalMetadataMappingPatterns() {
+      // TODO: Metadata Mapping pattern
+      // TODO: Query Object pattern
+      // TODO: Repository pattern
     }
 
-    private static void DataSourceArchitecturalPatterns() {
-      // TODO: Table Data Gateway pattern
-      // TODO: Row Data Gateway pattern
-      // TODO: Active Record pattern
-      // TODO: Data Mapper pattern
+    private static void WebPresentationPatterns() {
+      // TODO: Model View Controller pattern
+      // TODO: Page Controller pattern
+      // TODO: Front Controller pattern
+      // TODO: Template View pattern
+      // TODO: Transform View pattern
+      // TODO: Two-Step View pattern
+      // TODO: Application Controller pattern
     }
 
-    private static void DomainLogicPatterns() {
-      // TODO: Transaction Script pattern
-      // TODO: Domain Model pattern
-      // TODO: Table Module pattern
-      // TODO: Service Layer pattern
+    private static void DistributionPatterns() {
+      // TODO: Remote Facade pattern
+      // TODO: Data Transfer Object pattern
     }
+
+    private static void OfflineConcurrencyPatterns() {
+      // TODO: Optimistic Offline Lock pattern
+      // TODO: Pessimistic Offline Lock pattern
+      // TODO: Coarse Grained Lock pattern
+      // TODO: Implicit Lock pattern
+    }
+
+    private static void SessionStatePatterns() {
+      // TODO: Client Session State pattern
+      // TODO: Server Session State pattern
+      // TODO: Database Session State pattern
+    }
+
+    private static void BasePatterns() {
+      // TODO: Gateway pattern
+      // TODO: Mapper pattern
+      // TODO: Layer Supertype pattern
+      // TODO: Separated Interface pattern
+      // TODO: Registry pattern
+      // TODO: Value Object pattern
+      // TODO: Money pattern
+      // TODO: Special Case pattern
+      // TODO: Plugin pattern
+      // TODO: Service Stub pattern
+      // TODO: Record Set pattern
+    }
+    #endregion
   }
 }
