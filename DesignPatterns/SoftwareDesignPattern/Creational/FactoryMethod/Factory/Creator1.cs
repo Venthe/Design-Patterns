@@ -1,5 +1,6 @@
 ﻿using System;
 
+#pragma warning disable CC0091 // Use static method
 namespace DesignPatterns.SoftwareDesignPattern.Creational.FactoryMethod.Factory {
   // Should be only used as concrete factory method
   public class Creator1 {

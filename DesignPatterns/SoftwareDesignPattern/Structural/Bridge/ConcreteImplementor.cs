@@ -1,5 +1,5 @@
 ﻿namespace DesignPatterns.SoftwareDesignPattern.Structural.Bridge {
   public class ConcreteImplementor : IImplementor {
-    public string DoStuff() => "ConcreteImplementor";
+    public string DoStuff() => "Concrete Implementor";
   }
 }
