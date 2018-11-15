@@ -1,5 +1,5 @@
 ﻿namespace DesignPatterns.Pattern.Other.NullObject {
-  public class Cat : IAnimal {
-    public string Speak() => "Meow";
+  public class Cat : AbstractAnimal {
+    public override string Speak() => "Meow";
   }
 }

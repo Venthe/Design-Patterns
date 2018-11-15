@@ -57,6 +57,8 @@
     <Compile Include="Pattern\Creational\AbstractFactory\ProductFamily1\ConcreteFactory.cs" />
     <Compile Include="Pattern\Creational\AbstractFactory\ProductFamily1\ProductA.cs" />
     <Compile Include="Pattern\Creational\AbstractFactory\ProductFamily1\ProductB.cs" />
+    <Compile Include="Pattern\Other\NullObject\AbstractAnimal.cs" />
+    <Compile Include="Pattern\Other\NullObject\NullAnimal.cs" />
     <Compile Include="Pattern\Structural\Adapter\AdapterPatternSample.cs" />
     <Compile Include="Pattern\Structural\Adapter\ITargetAdapter.cs" />
     <Compile Include="Pattern\Structural\Adapter\TargetAdapter.cs" />
@@ -90,7 +92,6 @@
     <Compile Include="Pattern\Other\NullObject\Cat.cs" />
     <Compile Include="Pattern\Other\NullObject\Dog.cs" />
     <Compile Include="Pattern\Other\NullObject\IAnimal.cs" />
-    <Compile Include="Pattern\Other\NullObject\NullObjectAnimal.cs" />
     <Compile Include="Pattern\Other\NullObject\NullObjectPatternSample.cs" />
     <Compile Include="Pattern\Behavioral\State\ITurnstileState.cs" />
     <Compile Include="Pattern\Behavioral\State\ClosedState.cs" />
