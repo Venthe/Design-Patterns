@@ -1,5 +1,5 @@
 ﻿using System;
-using DesignPatterns.Pattern;
+using DesignPatterns.SoftwareDesignPattern;
 
 namespace DesignPatterns.Utilities {
   public class ConsoleUtilities {
