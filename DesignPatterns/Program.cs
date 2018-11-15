@@ -8,6 +8,7 @@ using DesignPatterns.SoftwareDesignPattern.Behavioral.Visitor;
 using DesignPatterns.SoftwareDesignPattern.Creational.AbstractFactory;
 using DesignPatterns.SoftwareDesignPattern.Creational.Builder;
 using DesignPatterns.SoftwareDesignPattern.Creational.FactoryMethod;
+using DesignPatterns.SoftwareDesignPattern.Creational.Prototype;
 using DesignPatterns.SoftwareDesignPattern.Creational.Singleton;
 using DesignPatterns.SoftwareDesignPattern.Other.NullObject;
 using DesignPatterns.SoftwareDesignPattern.Structural.Adapter;
@@ -47,7 +48,7 @@ namespace DesignPatterns {
       ConsoleUtilities.DisplayInBlock(new FactoryMethodPatternSample());
       ConsoleUtilities.DisplayInBlock(new SingletonPatternSample());
       ConsoleUtilities.DisplayInBlock(new BuilderPatternSample());
-      // TODO: Prototype pattern
+      ConsoleUtilities.DisplayInBlock(new PrototypePatternSample());
     }
 
     private static void StructuralPattterns() {

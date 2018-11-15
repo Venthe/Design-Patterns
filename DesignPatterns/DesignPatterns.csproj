@@ -57,6 +57,7 @@
     <Compile Include="SoftwareDesignPattern\Creational\AbstractFactory\ProductFamily1\ConcreteFactory.cs" />
     <Compile Include="SoftwareDesignPattern\Creational\AbstractFactory\ProductFamily1\ProductA.cs" />
     <Compile Include="SoftwareDesignPattern\Creational\AbstractFactory\ProductFamily1\ProductB.cs" />
+    <Compile Include="SoftwareDesignPattern\Creational\Prototype\PrototypePatternSample.cs" />
     <Compile Include="SoftwareDesignPattern\Other\NullObject\AbstractAnimal.cs" />
     <Compile Include="SoftwareDesignPattern\Other\NullObject\NullAnimal.cs" />
     <Compile Include="SoftwareDesignPattern\Structural\Adapter\AdapterPatternSample.cs" />
