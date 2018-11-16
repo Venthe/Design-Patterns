@@ -15,6 +15,7 @@ using DesignPatterns.SoftwareDesignPattern.Structural.Bridge;
 using DesignPatterns.SoftwareDesignPattern.Structural.Composite;
 using DesignPatterns.SoftwareDesignPattern.Structural.Decorator;
 using DesignPatterns.SoftwareDesignPattern.Structural.Facade;
+using DesignPatterns.SoftwareDesignPattern.Structural.FlyweightPatternSample;
 using DesignPatterns.SoftwareDesignPattern.Structural.Proxy;
 using DesignPatterns.Utilities;
 
@@ -57,7 +58,7 @@ namespace DesignPatterns {
       ConsoleUtilities.DisplayInBlock(new DecoratorPatternSample());
       ConsoleUtilities.DisplayInBlock(new FacadePatternSample());
       ConsoleUtilities.DisplayInBlock(new ProxyPatternSample());
-      // TODO: Flyweight pattern
+      ConsoleUtilities.DisplayInBlock(new FlyweightPatternSample());
     }
 
     private static void BehavioralPatterns() {

@@ -108,6 +108,10 @@
     <Compile Include="SoftwareDesignPattern\Behavioral\Visitor\Visitee\RealEstate.cs" />
     <Compile Include="SoftwareDesignPattern\Behavioral\Visitor\VisitorPatternSample.cs" />
     <Compile Include="SoftwareDesignPattern\Behavioral\Visitor\Visitor\NetWorthVisitor.cs" />
+    <Compile Include="SoftwareDesignPattern\Structural\Flyweight\FlyweightPatternSample.cs" />
+    <Compile Include="SoftwareDesignPattern\Structural\Flyweight\TileFlyweightFactory.cs" />
+    <Compile Include="SoftwareDesignPattern\Structural\Flyweight\Tile\Tile.cs" />
+    <Compile Include="SoftwareDesignPattern\Structural\Flyweight\Tile\ITile.cs" />
     <Compile Include="Utilities\ConsoleUtilities.cs" />
     <Compile Include="SoftwareDesignPattern\Structural\Decorator\AbstractBeverage.cs" />
     <Compile Include="SoftwareDesignPattern\Structural\Decorator\AbstractBeverageAddonDecorator.cs" />
